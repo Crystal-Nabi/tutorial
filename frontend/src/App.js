@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { store } from "./utils/store";
 import { history } from "./utils/history";
 import PageSignin from "./pages/auth/signin";
+import PageSignup from "./pages/auth/signup";
 function App() {
   return (
     <Provider store={store}>
@@ -12,7 +13,9 @@ function App() {
 
         <main>
           <Routes>
-            <Route path="" exact component={PageSignin} />
+            <Route path="/" element={<PageSignin />} />
+            <Route path="/signup" element={<PageSignup />} />
+            <Route path="/signin" element={<PageSignin />} />
           </Routes>
         </main>
       </BrowserRouter>
