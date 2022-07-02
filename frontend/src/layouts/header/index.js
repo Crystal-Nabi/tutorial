@@ -5,6 +5,7 @@ const PageHeader = () => {
     <header>
       <NavLink to="/">Home</NavLink>
       <NavLink to="/signin">signin</NavLink>
+      <NavLink to="/signup">signup</NavLink>
     </header>
   );
 };
