@@ -1,9 +1,8 @@
 import React from "react";
 const PageSignin = () => {
   return (
-    <div>
+    <div className="page-content">
       <p>Click here to sign in</p>
-      asdfsafsafsafd
     </div>
   );
 };
