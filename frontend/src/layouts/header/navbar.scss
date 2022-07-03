@@ -1,0 +1,61 @@
+.navbar {
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar li a {
+  color: aliceblue;
+  text-decoration: none;
+}
+// .menu > li > a {
+//   color: aliceblue;
+// }
+.menu {
+  display: flex;
+}
+.menu > li {
+  text-align: center;
+  width: 150px;
+  &:last-child {
+    border-right: none;
+  }
+  border-right: solid 2px rgb(143, 137, 137);
+  list-style-type: none;
+  &:hover .submenu {
+    position: absolute;
+    display: block;
+    transition: 0.3s;
+    background-color: #333;
+  }
+}
+.submenu > li {
+  &.active,
+  &:hover {
+    border-left: solid 8px rgb(83, 220, 113);
+  }
+}
+.submenu > li a {
+  padding-right: 8px;
+}
+
+.menu li a {
+  font-size: 1.2rem;
+  &.active,
+  &:hover {
+    color: rgb(83, 220, 113);
+  }
+}
+
+.submenu {
+  display: none;
+  padding-inline-start: 0px;
+
+  list-style-type: none;
+}
+.submenu li {
+  padding: 0.5rem 0 0rem 0;
+  width: 150px;
+  display: block;
+  border-bottom: solid 1px rgb(255, 255, 255);
+}
