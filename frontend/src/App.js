@@ -6,6 +6,7 @@ import { history } from "./utils/history";
 import PageSignin from "./pages/auth/signin";
 import PageSignup from "./pages/auth/signup";
 import PageFooter from "./layouts/footer";
+import PageHome from "./pages/home";
 function App() {
   return (
     <Provider store={store}>
@@ -14,9 +15,10 @@ function App() {
 
         <main>
           <Routes>
-            <Route path="/" element={<PageSignin />} />
+            <Route path="/" element={<PageHome />} />
             <Route path="/signup" element={<PageSignup />} />
             <Route path="/signin" element={<PageSignin />} />
+            <Route path="/login" element={<PageSignin />} />
           </Routes>
         </main>
         <PageFooter />
