@@ -1,7 +1,9 @@
 import React from "react";
 const PageFooter=()=>{
-return   ( <footer>
-        <p>CopyRight @{new Date().getFullYear()}</p>
+return   ( <footer >
+    <div  >
+        <p style={{textAlign:"center",fontSize:"18px"}}>CopyRight @{new Date().getFullYear()}</p>
+        </div>
     </footer>)
 
 }
