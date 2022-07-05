@@ -1,6 +1,6 @@
 import { USER_LOGIN } from "../utils/types";
 const initialState = {
-  user: {},
+  user: "",
   token: "",
 };
 const userReducer = (state = initialState, action) => {

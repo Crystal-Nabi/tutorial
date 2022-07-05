@@ -38,6 +38,7 @@ const PageHeader = () => {
         <ul className="menu">
           <li>
             <NavLink to="/login">login</NavLink>
+            <NavLink to="/signup">sign up</NavLink>
           </li>
         </ul>
       </div>
