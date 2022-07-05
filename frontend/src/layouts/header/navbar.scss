@@ -30,6 +30,7 @@
   }
 }
 .submenu > li {
+  z-index: 9999;
   &.active,
   &:hover {
     border-left: solid 8px rgb(83, 220, 113);

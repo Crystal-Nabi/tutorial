@@ -7,6 +7,7 @@ import PageSignin from "./pages/auth/signin";
 import PageSignup from "./pages/auth/signup";
 import PageFooter from "./layouts/footer";
 import PageHome from "./pages/home";
+import PageIntroduce from "./pages/introduce";
 function App() {
   return (
     <Provider store={store}>
@@ -19,6 +20,7 @@ function App() {
             <Route path="/signup" element={<PageSignup />} />
             <Route path="/signin" element={<PageSignin />} />
             <Route path="/login" element={<PageSignin />} />
+            <Route path="/introduce/our" element={<PageIntroduce />} />
           </Routes>
         </main>
         <PageFooter />
